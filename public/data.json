@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Brahma Kamal Plant",
+        "brandName": "Brahma kamal",
+        "price": 120,
+        "disCountPrice": 150,
+        "sold": 1300,
+        "available": 230,
+        "imgThumb": "",
+        "imgThumbSec": "",
+        "imgGallery": ["https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart7_ny8rfz.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart5_woaikp.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart3_lbh4gf.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart4_uynapa.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115916/Tree%20SHOP/img%20Gallery/Cart6_xzqwtd.png"],
+        "review": 0,
+        "extraTax": 8,
+        "productCode": "abnx123",
+        "availableStatus": true,
+        "categories": "tableTree",
+        "describe": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas consectetur inventore voluptatem dignissimos nemo repellendus est, harum maiores veritatis quidem."
+    }
+]
