@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Prosto: ["Prosto One", "cursive"],
+        Poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
