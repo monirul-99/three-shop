@@ -4,16 +4,16 @@ import EditPic from "../../Images/kisspng.png";
 const HomeArrive = () => {
   return (
     <section className="container mx-auto">
-      <div className="border relative flex items-center">
+      <div className="relative flex items-center justify-between space-x-16">
         <img className="w-2/5" src={EditPic} alt="" />
-        <div className="space-y-5">
-          <p className="uppercase text-[15px] text-[#050505]">
+        <div className="space-y-7 mt-12 w-6/12">
+          <p className="uppercase text-[15px] text-[#050505] font-Poppins">
             New Collection 2020
           </p>
           <h1 className="text-2xl capitalize tracking-wide font-Prosto mt-2">
             House Shape Plant
           </h1>
-          <p className="text-[15px] text-[#050505] w-4/5">
+          <p className="text-[15px] text-[#050505] font-Poppins">
             The growth of a plant involves several stages. Fast, a plot of land
             is selected. The land is next dug well with the help of the spade.
             The soil is ground into dust and manure both biological and the

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 // import Flower from "../../Images/Flower.png";
 // import TwoFlower from "../../Images/Two Flower.png";
+import { IoChevronBackOutline, IoChevronForward } from "react-icons/io5";
+import { IconContext } from "react-icons";
 
 const Products = () => {
   const [productData, setProductData] = useState([]);
@@ -11,14 +13,12 @@ const Products = () => {
       .then((res) => res.json())
       .then((data) => setProductData(data));
   }, []);
-  console.log(productData);
   return (
-    <div className="container mx-auto py-16">
+    <div className="container mx-auto py-24">
       <div className="flex flex-col items-center">
-        <h1 className="uppercase text-xl font-Prosto tracking-wide">
+        <h1 className="uppercase text-xl font-Prosto tracking-wide text-center">
           Popular Products
         </h1>
-        {/* <img className="w-[300px] ml-5 -mt-16" src={TwoFlower} alt="" /> */}
       </div>
 
       <aside className="flex items-center justify-center space-x-5 py-7">
@@ -34,7 +34,31 @@ const Products = () => {
         </Link>
       </aside>
 
-      <div className="grid grid-cols-5 gap-12 w-[77%] mx-auto py-5">
+      {/* <div className="flex justify-between mt-10">
+        <h4 className="font-Prosto text-[16px]">New Products</h4>
+        <aside className="flex items-center space-x-3">
+          <div className="bg-gray-200 p-1.5">
+            <IconContext.Provider
+              value={{ className: "shared-class", size: 22 }}
+            >
+              <IoChevronBackOutline />
+            </IconContext.Provider>
+          </div>
+          <div className="bg-gray-200 p-1.5">
+            <IconContext.Provider
+              value={{ className: "shared-class", size: 22 }}
+            >
+              <IoChevronForward />
+            </IconContext.Provider>
+          </div>
+        </aside>
+      </div> */}
+      <div className="grid grid-cols-6 gap-10 py-5">
+        {productData?.map((product, inx) => (
+          <ProductCard key={inx} product={product}></ProductCard>
+        ))}
+      </div>
+      <div className="grid grid-cols-6 gap-10 py-5">
         {productData?.map((product, inx) => (
           <ProductCard key={inx} product={product}></ProductCard>
         ))}

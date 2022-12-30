@@ -68,6 +68,23 @@
         "describe": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas consectetur inventore voluptatem dignissimos nemo repellendus est, harum maiores veritatis quidem."
     },
     {
+        "name": "Evy Baugainvillea",
+        "brandName": "Evy plants",
+        "price": 220,
+        "disCountPrice": 250,
+        "sold": 1900,
+        "available": 1110,
+        "imgThumb": "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672153327/Tree%20SHOP/Cart/Cart4---1_y2itct.jpg",
+        "imgThumbSec": "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672153327/Tree%20SHOP/Cart/Cart4---2_nbasyi.jpg",
+        "imgGallery": ["https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart7_ny8rfz.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart5_woaikp.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart3_lbh4gf.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115917/Tree%20SHOP/img%20Gallery/Cart4_uynapa.png", "https://res.cloudinary.com/dr4o1qswz/image/upload/v1672115916/Tree%20SHOP/img%20Gallery/Cart6_xzqwtd.png"],
+        "review": 0,
+        "extraTax": 19,
+        "productCode": "wefsfey",
+        "availableStatus": true,
+        "categories": "tableTree",
+        "describe": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas consectetur inventore voluptatem dignissimos nemo repellendus est, harum maiores veritatis quidem."
+    },
+    {
         "name": "Natural Nursery",
         "brandName": "Nursery plants",
         "price": 20,

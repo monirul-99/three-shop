@@ -1,9 +1,18 @@
 import React from "react";
+import { IoCartOutline, IoEyeOutline, IoHeartOutline } from "react-icons/io5";
+import "./products.css";
 
 const ProductCard = ({ product }) => {
   const { name, imgThumb, imgThumbSec, price, disCountPrice } = product;
   return (
-    <div className="w-[225px] border border-dashed">
+    <div
+      className={`w-[225px] border border-dashed cur transition-all duration-100 active:scale-[0.94] cursor-pointer`}
+    >
+      <div className="absolute top-0 space-y-5 px-4 duration-800 extra">
+        <IoCartOutline />
+        <IoHeartOutline />
+        <IoEyeOutline />
+      </div>
       <aside>
         <img className="w-[225px]" src={imgThumb} alt="" />
       </aside>
