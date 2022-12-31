@@ -23,7 +23,7 @@ const ThreeService = () => {
           </div>
         </aside>
 
-        <aside className="lg:border-r lg:h-20 border-b w-full"></aside>
+        <aside className="lg:border-r lg:h-20 border-b w-full lg:w-0"></aside>
         <aside className="flex items-center space-x-5">
           <IconContext.Provider value={{ color: "#79A206", size: 45 }}>
             <RiPaypalLine />
@@ -37,7 +37,7 @@ const ThreeService = () => {
             </p>
           </div>
         </aside>
-        <aside className="lg:border-r lg:h-20 border-b w-full"></aside>
+        <aside className="lg:border-r lg:h-20 border-b w-full lg:w-0"></aside>
 
         <aside className="flex items-center space-x-5">
           <IconContext.Provider value={{ color: "#79A206", size: 45 }}>
