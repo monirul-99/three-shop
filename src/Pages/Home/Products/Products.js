@@ -33,35 +33,20 @@ const Products = () => {
           <span className="border-b py-2">Indoor Plants</span>
         </Link>
       </aside>
-
-      {/* <div className="flex justify-between mt-10">
-        <h4 className="font-Prosto text-[16px]">New Products</h4>
-        <aside className="flex items-center space-x-3">
-          <div className="bg-gray-200 p-1.5">
-            <IconContext.Provider
-              value={{ className: "shared-class", size: 22 }}
-            >
-              <IoChevronBackOutline />
-            </IconContext.Provider>
-          </div>
-          <div className="bg-gray-200 p-1.5">
-            <IconContext.Provider
-              value={{ className: "shared-class", size: 22 }}
-            >
-              <IoChevronForward />
-            </IconContext.Provider>
-          </div>
-        </aside>
-      </div> */}
-      <div className="grid grid-cols-2 lg:grid-cols-6 gap-10 py-5 w-[95%] mx-auto">
-        {productData?.map((product, inx) => (
-          <ProductCard key={inx} product={product}></ProductCard>
-        ))}
-      </div>
-      <div className="lg:grid grid-cols-6 gap-10 py-5 hidden lg:block">
-        {productData?.map((product, inx) => (
-          <ProductCard key={inx} product={product}></ProductCard>
-        ))}
+      <div className="lg:w-[80%] w-[95%] mx-auto mt-10">
+        <div className="flex justify-between">
+          <h1 className="lg:text-[1.3rem] text-[1rem] uppercase font-light">
+            Outdoors Plants
+          </h1>
+          <p className="capitalize lg:text-[1rem] text-[0.8rem] border px-5 py-1 font-Poppins font-light">
+            See All
+          </p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 py-5">
+          {productData?.map((product, inx) => (
+            <ProductCard key={inx} product={product}></ProductCard>
+          ))}
+        </div>
       </div>
     </div>
   );

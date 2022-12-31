@@ -97,7 +97,7 @@ const FooterSubscribe = () => {
               </div>
             </div>
             <div>
-              <h1 className="uppercase font-Poppins text-xl mb-4">
+              <h1 className="uppercase font-Poppins text-xl mb-4 mt-7 lg:mt-0">
                 information
               </h1>
               <div className="space-y-4">
@@ -109,7 +109,7 @@ const FooterSubscribe = () => {
               </div>
             </div>
             <div>
-              <h1 className="uppercase font-Poppins text-xl mb-4">
+              <h1 className="uppercase font-Poppins text-xl mb-4 mt-7 lg:mt-0">
                 customer service
               </h1>
 

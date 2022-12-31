@@ -14,10 +14,10 @@ export const HomeCover = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 4500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
         // pagination={{
         //   clickable: true,
         // }}
@@ -29,14 +29,14 @@ export const HomeCover = () => {
           <div className="border bg-[#F7F7F7] h-[250px] lg:h-full">
             <div className="relative container mx-auto">
               <div>
-                <img src={Cover1} alt="" />
+                <img className="mt-14 lg:mt-0" src={Cover1} alt="" />
               </div>
 
-              <div className="absolute top-1/4 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
-                <h2 className="lg:text-6xl text-[1.2rem] font-bold leading-snug font-Prosto">
+                <h2 className="lg:text-6xl text-[1.1rem] font-bold leading-snug font-Prosto">
                   New Perfect Plant <br /> Collection
                 </h2>
                 <p className="mt-3 text-[#7A806E] w-1/2 lg:block hidden">
@@ -56,10 +56,10 @@ export const HomeCover = () => {
           <div className="border bg-[#F2F7F3] h-[250px] lg:h-full">
             <div className="relative container mx-auto">
               <div>
-                <img src={Cover2} alt="" />
+                <img className="mt-14 lg:mt-0" src={Cover2} alt="" />
               </div>
 
-              <div className="absolute top-1/4 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
@@ -83,10 +83,10 @@ export const HomeCover = () => {
           <div className="border bg-[#F2F7F3] h-[250px] lg:h-full">
             <div className="relative container mx-auto">
               <div>
-                <img src={Cover3} alt="" />
+                <img className="mt-14 lg:mt-0" src={Cover3} alt="" />
               </div>
 
-              <div className="absolute top-1/4 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
