@@ -11,7 +11,7 @@ const HomeGallery = () => {
   return (
     <section className="container mx-auto">
       <div className="lg:grid lg:grid-cols-12 gap-8 w-[95%] mx-auto">
-        <aside className="grid col-span-4 border bg-[#EEEEEE] mb-8 rounded-md">
+        <aside className="grid col-span-4 border bg-[#EEEEEE] mb-8 lg:mb-0 rounded-md">
           <div className="space-y-3 mt-20 ml-10">
             <p className="text-[#7A7A7A] font-Poppins">Upto 55% Off</p>
             <h1 className="text-2xl font-Prosto  pb-8">House Shape Plant</h1>

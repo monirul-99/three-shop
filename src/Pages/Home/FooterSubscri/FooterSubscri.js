@@ -46,10 +46,12 @@ const FooterSubscribe = () => {
           </div>
         </aside>
 
-        <aside className="mt-20">
-          <h1 className="uppercase font-Poppins text-xl mb-8">our address</h1>
+        <aside className="mt-20 w-[95%] mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-start">
-            <aside className="space-y-4 font-Poppins text-[0.9rem]">
+            <aside className="space-y-4 font-Poppins text-[0.9rem] mb-10">
+              <h1 className="uppercase font-Poppins text-xl mb-5">
+                our address
+              </h1>
               <div className="flex items-center space-x-3">
                 <IconContext.Provider value={{ color: "#014E37", size: 20 }}>
                   <IoMailOpenOutline />
@@ -84,25 +86,40 @@ const FooterSubscribe = () => {
               </div>
             </aside>
             <div>
-              <h1 className="uppercase font-Poppins text-xl mb-8">account</h1>
+              <h1 className="uppercase font-Poppins text-xl mb-3">account</h1>
 
-              <div>
-                <p>Orders Checkout Downloads</p>
-                <p>My Account Details</p>
+              <div className="space-y-4">
+                <p>My Account</p>
+                <p>Orders Checkout</p>
+                <p>Order History</p>
+                <p>Shop</p>
+                <p>Shopping Cart</p>
               </div>
             </div>
             <div>
-              <h1 className="uppercase font-Poppins text-xl mb-8">
+              <h1 className="uppercase font-Poppins text-xl mb-4">
                 information
               </h1>
-              <div>
+              <div className="space-y-4">
                 <p>Privacy Policy</p>
                 <p>Delivery Information</p>
                 <p>Contact Us</p>
+                <p>Frequently Questions</p>
+                <p>Wishlist</p>
               </div>
             </div>
             <div>
-              <h1 className="uppercase font-Poppins text-xl mb-8">CATEGORY</h1>
+              <h1 className="uppercase font-Poppins text-xl mb-4">
+                customer service
+              </h1>
+
+              <div className="space-y-4">
+                <p>Contact us</p>
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+                <p>Site Map</p>
+                <p>Returns</p>
+              </div>
             </div>
           </div>
         </aside>
@@ -125,9 +142,9 @@ const FooterSubscribe = () => {
           </div>
         </aside>
       </div>
-      <div className="bg-[#014E37] py-3">
+      <div className="bg-[#014E37]">
         <div className="container mx-auto">
-          <p className="text-white font-Poppins text-[0.8rem]">
+          <p className="text-white font-Poppins text-[0.8rem]  py-3 w-[95%] mx-auto">
             Designed by Demo Theme All rights reserved.
           </p>
         </div>
