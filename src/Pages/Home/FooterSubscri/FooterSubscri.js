@@ -49,7 +49,7 @@ const FooterSubscribe = () => {
 
         <aside className="mt-20">
           <h1 className="uppercase font-Poppins text-xl mb-8">our address</h1>
-          <div className="flex justify-between">
+          <div className="flex justify-between items-start">
             <aside className="space-y-4 font-Poppins text-[0.9rem]">
               <div className="flex items-center space-x-3">
                 <IconContext.Provider value={{ color: "#014E37", size: 20 }}>

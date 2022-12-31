@@ -6,7 +6,6 @@ import { HomeCover } from "./HomeCover/HomeCover";
 import HomeGallery from "./HomeGallery/HomeGallery";
 import Products from "./Products/Products";
 import ThreeService from "./ThreeService/ThreeService";
-// import TwoCard from "./TwoCard/TwoCard";
 
 const Home = () => {
   return (
