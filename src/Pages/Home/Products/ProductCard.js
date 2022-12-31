@@ -6,9 +6,9 @@ const ProductCard = ({ product }) => {
   const { name, imgThumb, imgThumbSec, price, disCountPrice } = product;
   return (
     <div
-      className={`relative w-[225px] border border-dashed cur transition-all duration-100 active:scale-[0.94] cursor-pointer`}
+      className={`relative lg:w-[225px] border border-dashed cur transition-all duration-100 active:scale-[0.94] cursor-pointer`}
     >
-      <div className={`absolute top-0 space-y-5 px-4 duration-800 z-10`}>
+      <div className={`absolute top-0 space-y-5 px-4 duration-800 z-10 hidden`}>
         <IoCartOutline />
         <IoHeartOutline />
         <IoEyeOutline />

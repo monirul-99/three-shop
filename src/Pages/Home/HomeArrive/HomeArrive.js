@@ -21,7 +21,7 @@ const HomeArrive = () => {
             market and sown on the bed.
           </p>
 
-          <button className="text-[#306D58] border px-5 py-2 tracking-widest text-sm uppercase mt-10 hover:bg-[#306D58] hover:text-white duration-500">
+          <button className="text-[#306D58] border px-5 py-2 tracking-widest text-sm uppercase lg:mt-10 mt-7 hover:bg-[#306D58] hover:text-white duration-500">
             Shop Now
           </button>
         </div>

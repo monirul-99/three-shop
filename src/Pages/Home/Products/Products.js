@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 // import Flower from "../../Images/Flower.png";
 // import TwoFlower from "../../Images/Two Flower.png";
-import { IoChevronBackOutline, IoChevronForward } from "react-icons/io5";
-import { IconContext } from "react-icons";
+// import { IoChevronBackOutline, IoChevronForward } from "react-icons/io5";
+// import { IconContext } from "react-icons";
 
 const Products = () => {
   const [productData, setProductData] = useState([]);
@@ -53,12 +53,12 @@ const Products = () => {
           </div>
         </aside>
       </div> */}
-      <div className="grid grid-cols-6 gap-10 py-5">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-10 py-5 w-[95%] mx-auto">
         {productData?.map((product, inx) => (
           <ProductCard key={inx} product={product}></ProductCard>
         ))}
       </div>
-      <div className="grid grid-cols-6 gap-10 py-5">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-10 py-5 hidden lg:block">
         {productData?.map((product, inx) => (
           <ProductCard key={inx} product={product}></ProductCard>
         ))}
