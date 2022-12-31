@@ -15,7 +15,7 @@ const Blogs = () => {
           Our Latest Post
         </h2>
 
-        <div className="grid grid-cols-3 gap-10 w-[82%] mx-auto">
+        <div className="grid lg:grid-cols-3 gap-10 w-[82%] mx-auto">
           {blogsData?.map((blog, inx) => (
             <BlogCard key={inx} blog={blog}></BlogCard>
           ))}

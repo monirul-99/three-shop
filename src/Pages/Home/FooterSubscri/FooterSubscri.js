@@ -27,13 +27,12 @@ const FooterSubscribe = () => {
                 Subscribe Our Newsletter
               </h1>
               <p className="text-center capitalize font-Poppins text-[0.8rem]">
-                We’ll never share your email address with a third-party, So be
-                careful
+                We’ll never share your email address with a third-party.
               </p>
             </div>
           </div>
 
-          <div className="flex relative justify-center mt-3 w-2/5 mx-auto items-center">
+          <div className="flex relative justify-center mt-3 lg:w-2/5 w-11/12 mx-auto items-center">
             <input
               className="w-full py-3 rounded-md pl-5 outline-none"
               type="text"
@@ -49,7 +48,7 @@ const FooterSubscribe = () => {
 
         <aside className="mt-20">
           <h1 className="uppercase font-Poppins text-xl mb-8">our address</h1>
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col lg:flex-row justify-between items-start">
             <aside className="space-y-4 font-Poppins text-[0.9rem]">
               <div className="flex items-center space-x-3">
                 <IconContext.Provider value={{ color: "#014E37", size: 20 }}>
@@ -111,17 +110,17 @@ const FooterSubscribe = () => {
         <aside>
           <p className="border-b-[0.1rem] border-green-900 pt-12"></p>
 
-          <div className="flex items-center justify-center space-x-8 mt-10">
+          <div className="flex flex-wrap items-center justify-center space-x-8 mt-10">
             <Link>House Plants</Link>
-            <p className="border-r border-green-600 h-5"></p>
+            <p className="border-r border-green-600 h-5 hidden lg:block"></p>
             <Link>Office Plants</Link>
-            <p className="border-r border-green-600 h-5"></p>
+            <p className="border-r border-green-600 h-5 hidden lg:block"></p>
             <Link>Hanging planter</Link>
-            <p className="border-r border-green-600 h-5"></p>
+            <p className="border-r border-green-600 h-5 hidden lg:block"></p>
             <Link>Ceramic Plants</Link>
-            <p className="border-r border-green-600 h-5"></p>
+            <p className="border-r border-green-600 h-5 hidden lg:block"></p>
             <Link>Contact us</Link>
-            <p className="border-r border-green-600 h-5"></p>
+            <p className="border-r border-green-600 h-5 hidden lg:block"></p>
             <Link>Help</Link>
           </div>
         </aside>
