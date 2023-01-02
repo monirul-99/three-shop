@@ -6,8 +6,10 @@ module.exports = {
       fontFamily: {
         Prosto: ["Prosto One", "cursive"],
         Poppins: ["Poppins", "sans-serif"],
+        Lato: ["Lato", "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

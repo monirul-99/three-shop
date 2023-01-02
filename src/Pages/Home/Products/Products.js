@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
@@ -9,9 +10,10 @@ import ProductCard from "./ProductCard";
 const Products = () => {
   const [productData, setProductData] = useState([]);
   useEffect(() => {
-    fetch("data.json")
-      .then((res) => res.json())
-      .then((data) => setProductData(data));
+    axios
+      .get(`http://localhost:5000/card-data`)
+      .then((data) => setProductData(data.data))
+      .catch((error) => console.log(error));
   }, []);
   return (
     <div className="container mx-auto py-24">

@@ -14,10 +14,10 @@ export const HomeCover = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 4500,
+        //   disableOnInteraction: false,
+        // }}
         // pagination={{
         //   clickable: true,
         // }}
@@ -32,7 +32,7 @@ export const HomeCover = () => {
                 <img className="mt-14 lg:mt-0" src={Cover1} alt="" />
               </div>
 
-              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-5 lg:-right-28 right-5">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
@@ -45,7 +45,7 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white px-5 py-1.5 rounded-[3px] lg:mt-16 mt-5">
+                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
                   Shop Now
                 </button>
               </div>
@@ -59,7 +59,7 @@ export const HomeCover = () => {
                 <img className="mt-14 lg:mt-0" src={Cover2} alt="" />
               </div>
 
-              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-5 lg:-right-28 right-3">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
@@ -72,7 +72,7 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white px-5 py-1.5 rounded-[3px] lg:mt-16 mt-5">
+                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
                   Shop Now
                 </button>
               </div>
@@ -86,7 +86,7 @@ export const HomeCover = () => {
                 <img className="mt-14 lg:mt-0" src={Cover3} alt="" />
               </div>
 
-              <div className="absolute lg:top-1/4 top-0 lg:-right-28 right-3">
+              <div className="absolute lg:top-1/4 top-5 lg:-right-28 right-3">
                 <p className="text-[14px] lg:text-[17px] text-[#7A806E] font-Poppins">
                   New Arrival 2021
                 </p>
@@ -99,7 +99,7 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white px-5 py-1.5 rounded-[3px] lg:mt-16 mt-5">
+                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
                   Shop Now
                 </button>
               </div>
