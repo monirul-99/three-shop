@@ -17,10 +17,10 @@ const Review = () => {
               <h1 className="uppercase font-semibold font-Poppins">Admin -</h1>
               <p>June 12, 2022</p>
             </div>
-            <div class="flex items-center py-5">
+            <div className="flex items-center py-5">
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-gray-300 dark:text-gray-500"
+                className="w-4 h-4 text-gray-300 dark:text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,10 +94,10 @@ const Review = () => {
               <h1 className="uppercase font-semibold font-Poppins">user -</h1>
               <p>June 12, 2022</p>
             </div>
-            <div class="flex items-center py-5">
+            <div className="flex items-center py-5">
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-yellow-400"
+                className="w-4 h-4 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const Review = () => {
               </svg>
               <svg
                 aria-hidden="true"
-                class="w-4 h-4 text-gray-300 dark:text-gray-500"
+                className="w-4 h-4 text-gray-300 dark:text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

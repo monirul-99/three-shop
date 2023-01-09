@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import Cover1 from "../../Images/Cover1.jpg";
 import Cover2 from "../../Images/Cover2.jpg";
 import Cover3 from "../../Images/Cover3.jpg";
+import { Link } from "react-router-dom";
 
 export const HomeCover = () => {
   return (
@@ -14,10 +15,10 @@ export const HomeCover = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 4500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
         // pagination={{
         //   clickable: true,
         // }}
@@ -45,9 +46,11 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -72,9 +75,11 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -99,9 +104,11 @@ export const HomeCover = () => {
                   suffered alteration...
                 </p>
 
-                <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  <button className="bg-[#014E37] text-white lg:px-5 px-2 lg:py-1.5 py-1 lg:rounded-[3px] rounded-[2px] lg:mt-16 mt-5">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

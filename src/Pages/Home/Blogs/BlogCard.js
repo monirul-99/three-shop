@@ -1,6 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog }) => {
   return (
@@ -16,9 +17,11 @@ const BlogCard = ({ blog }) => {
           <p className="text-gray-500 font-Poppins text-[0.9rem]">{blog.dec}</p>
           <p className="border-b pt-6"></p>
           <div className=" flex justify-between items-center mt-5">
-            <span className="inline-block font-Poppins font-semibold text-[0.9rem] border-b border-black">
-              Continue Reading
-            </span>
+            <Link to="blog-details">
+              <span className="inline-block font-Poppins font-semibold text-[0.9rem] border-b border-black">
+                Continue Reading
+              </span>
+            </Link>
             <aside className="flex items-center space-x-2">
               <IconContext.Provider value={{ color: "#A6A7A6", size: 21 }}>
                 <IoChatbubbleEllipsesOutline />

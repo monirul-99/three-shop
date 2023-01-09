@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { HiOutlineHeart } from "react-icons/hi2";
@@ -21,9 +21,14 @@ import { Link, useLoaderData } from "react-router-dom";
 import { IconContext } from "react-icons";
 import Footer from "../../../Shared/Footer/Footer";
 import Review from "../../Review/Review";
+import axios from "axios";
+import ProductCard from "./ProductCard";
+import { AuthContext } from "../../../Context/userContext";
+import { toast } from "react-hot-toast";
 
 export function ProductsDetails() {
   const [quantity, setQuantity] = useState(1);
+  const { Orders } = useContext(AuthContext);
   const data = useLoaderData();
   const {
     brandName,
@@ -38,15 +43,25 @@ export function ProductsDetails() {
     productCode,
     review,
     sold,
+    imgThumb,
     imgThumbSec,
+    _id,
   } = data;
-  console.log(data);
+  const [relatedData, setRelatedData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:5000/related-products/${categories}`)
+      .then((data) => setRelatedData(data.data))
+      .catch((error) => console.log(error));
+  }, [categories]);
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <>
-      <section className="relative bg-[url(https://res.cloudinary.com/dr4o1qswz/image/upload/v1672635981/Tree%20SHOP/UpdateTree/Untitled-2_e9x6ul.jpg)] bg-cover bg-center bg-no-repeat lg:h-[300px] h-[180px]">
-        <div class="absolute inset-0 bg-black/25 flex items-center justify-center">
+      <section className="relative bg-[url(https://res.cloudinary.com/dr4o1qswz/image/upload/v1672635981/Tree%20SHOP/UpdateTree/Untitled-2_e9x6ul.jpg)] bg-cover bg-center bg-no-repeat lg:h-[200px] h-[180px]">
+        <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
           <div className="text-center sm:text-left ">
             <h1 className="lg:text-4xl text-3xl text-center font-Poppins text-white font-bold">
               #stayHome
@@ -95,7 +110,7 @@ export function ProductsDetails() {
                 ))}
               </Swiper>
             </aside>
-            <aside className="lg:border pt-5 px-5">
+            <aside className="px-5">
               <div>
                 <p className="font-Ubuntu">
                   <span className="text-xl uppercase font-light text-gray-500 tracking-widest">
@@ -104,10 +119,10 @@ export function ProductsDetails() {
                 </p>
                 <h1 className="font-Poppins text-3xl mt-1">{name}</h1>
                 <div className="flex items-center space-x-3 font-Poppins text-[0.9rem]">
-                  <div class="flex items-center py-5">
+                  <div className="flex items-center py-5">
                     <svg
                       aria-hidden="true"
-                      class="w-4 h-4 text-yellow-400"
+                      className="w-4 h-4 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +132,7 @@ export function ProductsDetails() {
                     </svg>
                     <svg
                       aria-hidden="true"
-                      class="w-4 h-4 text-yellow-400"
+                      className="w-4 h-4 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +142,7 @@ export function ProductsDetails() {
                     </svg>
                     <svg
                       aria-hidden="true"
-                      class="w-4 h-4 text-yellow-400"
+                      className="w-4 h-4 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +152,7 @@ export function ProductsDetails() {
                     </svg>
                     <svg
                       aria-hidden="true"
-                      class="w-4 h-4 text-yellow-400"
+                      className="w-4 h-4 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +162,7 @@ export function ProductsDetails() {
                     </svg>
                     <svg
                       aria-hidden="true"
-                      class="w-4 h-4 text-gray-300 dark:text-gray-500"
+                      className="w-4 h-4 text-gray-300 dark:text-gray-500"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -216,7 +231,10 @@ export function ProductsDetails() {
                     </div>
                   </div>
 
-                  <button className="bg-[#f67321] text-white px-3  py-1.5 rounded-sm font-Poppins text-[0.9rem] w-[51.3%]">
+                  <button
+                    onClick={() => Orders(data)}
+                    className="bg-[#f67321] text-white px-3  py-1.5 rounded-sm font-Poppins text-[0.9rem] w-[51.3%]"
+                  >
                     Add To Cart
                   </button>
                   <button className="bg-[#2ac4f3] text-white px-6 py-1.5 rounded-sm font-Poppins text-[0.9rem] w-[51.3%]">
@@ -280,6 +298,16 @@ export function ProductsDetails() {
         </div>
 
         <Review />
+      </section>
+      <section className="container mx-auto lg:w-[65%] w-11/12 mt-16">
+        <h1 className="capitalize text-2xl font-Poppins text-center underline underline-offset-8 mb-5">
+          You May also like
+        </h1>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 py-10">
+          {relatedData?.map((product, inx) => (
+            <ProductCard key={inx} product={product}></ProductCard>
+          ))}
+        </div>
       </section>
       <Footer />
     </>

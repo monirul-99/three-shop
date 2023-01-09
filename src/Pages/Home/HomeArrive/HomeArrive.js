@@ -1,6 +1,6 @@
 import React from "react";
-import blob from "../../Images/PngItem_2499043.png";
 import EditPic from "../../Images/kisspng.png";
+import { Link } from "react-router-dom";
 const HomeArrive = () => {
   return (
     <section className="container mx-auto">
@@ -21,9 +21,11 @@ const HomeArrive = () => {
             market and sown on the bed.
           </p>
 
-          <button className="text-[#306D58] border px-5 py-2 tracking-widest text-sm uppercase lg:mt-10 mt-7 hover:bg-[#306D58] hover:text-white duration-500">
-            Shop Now
-          </button>
+          <Link to="/shop">
+            <button className="text-[#306D58] border px-5 py-2 tracking-widest text-sm uppercase lg:mt-10 mt-7 hover:bg-[#306D58] hover:text-white duration-500">
+              Shop Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>

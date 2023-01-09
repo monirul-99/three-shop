@@ -1,0 +1,4 @@
+.extraBorderRemove:last-child{
+    border-bottom: none;
+    padding-bottom: 5px;
+}

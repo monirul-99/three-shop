@@ -6,6 +6,7 @@ import Gallery2 from "../../Images/Gallery2.png";
 import Gallery3 from "../../Images/Gallery3.png";
 import Gallery4 from "../../Images/Gallery4.png";
 import Gallery5 from "../../Images/Gallery5.png";
+import { Link } from "react-router-dom";
 
 const HomeGallery = () => {
   return (
@@ -15,9 +16,12 @@ const HomeGallery = () => {
           <div className="space-y-3 mt-20 ml-10">
             <p className="text-[#7A7A7A] font-Poppins">Upto 55% Off</p>
             <h1 className="text-2xl font-Prosto  pb-8">House Shape Plant</h1>
-            <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
-              Shop Now
-            </button>
+            <Link to="/shop">
+              {" "}
+              <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
+                Shop Now
+              </button>
+            </Link>
           </div>
           <img className="w-3/5 ml-32 -mt-20" src={Gallery4} alt="" />
         </aside>
@@ -30,9 +34,12 @@ const HomeGallery = () => {
                 <h1 className="lg:text-2xl text-xl font-Prosto inline-block pb-8">
                   Indoor Plants
                 </h1>
-                <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  {" "}
+                  <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </aside>
             <aside className="border flex flex-row-reverse items-center justify-end bg-[#EEEEEE] h-[280px] rounded-md duration-500 hover:bg-green-50">
@@ -42,9 +49,12 @@ const HomeGallery = () => {
                 <h1 className="lg:text-2xl text-xl font-Prosto inline-block pb-8">
                   Office Plants
                 </h1>
-                <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  {" "}
+                  <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </aside>
           </div>
@@ -56,9 +66,12 @@ const HomeGallery = () => {
                 <h1 className="text-2xl font-Prosto  pb-8">
                   Ceramic Pot & Plant
                 </h1>
-                <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
-                  Shop Now
-                </button>
+                <Link to="/shop">
+                  {" "}
+                  <button className="inline-block rounded-[3px] text-white bg-[#306D58] border py-2 px-5 tracking-widest text-sm uppercase hover:bg-black hover:text-white duration-500">
+                    Shop Now
+                  </button>
+                </Link>
               </div>
             </aside>
           </div>
